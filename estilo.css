@@ -1,6 +1,8 @@
 
 
 @media screen and (min-width:800px) {
+    
+
     body {
         background-image: url("./Imagens/background_montanha.JPG");
         background-size: 100%;
@@ -42,8 +44,8 @@
         margin:0px;
     }
     
+    
     .menu li {
-        
         display: inline-block;
         padding: 10px;
         text-align: center;
@@ -53,7 +55,7 @@
         background-color: beige;
         color:cadetblue;
         line-height: normal;
-        
+        margin:0px;
     }
 
     #banner_menu {
@@ -760,14 +762,7 @@ tfoot input:hover {
 
 }
 
-input[type="submit"], input[type="reset"]{
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    border:none;
-    display:block-inline;
-    padding: 10px 15px;
-    
-}
+
 
 tfoot td {
     text-align: center;
@@ -820,6 +815,18 @@ figcaption {
 
 #robotica img {
     width: 100%;
+}
+
+
+
+
+#bs {
+    width:80%;
+}
+
+
+#formulario {
+    display:none;
 }
 
 
