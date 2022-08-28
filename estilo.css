@@ -1,0 +1,474 @@
+body {
+    margin:0%;
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 24px;
+    line-height: 1.5;
+    color:gray;
+    line-height: 2;
+    background-image: url("./Imagens/background_montanha.JPG");
+    background-size: 100%;
+    
+}
+
+
+
+.wrapper {
+    margin: 0% 10%;
+    padding-right:5%;
+    padding-left:5%;
+    background-color: white;
+}
+
+#banner_menu {
+    position:sticky;
+    top:0px;
+    background-color: white;
+    z-index: 1;
+    padding-bottom: 1px;
+    border:1px solid black;
+    margin: 0% 10%;
+}
+
+#quadro_inv_tab {
+    
+    
+    margin: 0 auto;
+    border-collapse: separate;
+
+}
+#quadro_inv_tab #quadro_inv_tab_a {
+    background-color: #0f589c;
+    padding-left:10px;
+}
+
+#quadro_inv_tab_a > h6, h2{
+    font-family: Helvetica;
+    margin:0px;
+    color:white;
+    font-weight:normal;
+    transform: scale(1,1.4);
+    
+}
+
+#quadro_inv_tab_a #ia {
+    font-size:20px;
+}
+
+#quadro_inv_tab_b {
+    padding-left:10px;
+    background-color: #017cbf;
+    color:white;
+}
+
+#quadro_inv_tab_c {
+    padding-left:10px;
+    background-color: #ed7d00;
+    color:white;
+}
+
+
+
+#quadro_inv_tab_c_a {
+    display:inline-block;
+    color:white;
+    transform: scale(1,1.2);
+    font-size: 16px;
+}
+
+#quadro_inv_tab_c_b {
+    display:inline-block;
+    color:white;
+    transform: scale(1,1.2);
+    font-size: 20px;
+
+    color:#2c5479;
+    font-size: 28px;
+    transform: scale(1,1.3);
+}
+
+#p_tech_a {
+    display:inline-block;
+    color:white;
+    font-size: 16px;
+    transform:scale(1,1.5);
+}
+
+.p_tech_b_n {
+    display:inline-block;
+    color:#eb7c09;
+    
+    font-size: 28px;
+    transform: scale(1,1.3);
+
+}
+
+#p_tech_b_p {
+    color:white;
+    transform: scale(2,1);
+}
+
+#stretch {
+    display:inline-block;
+    transform:scale(1,1.3);
+}
+
+
+
+#quadro_inv_tab #quadro_inv_tab_a > h2{
+    color:#eb7c09;
+    font-weight:normal;
+    
+}
+
+.titulo {
+    text-align: center;
+    line-height: 1;
+    border: 1px solid white;
+}
+div {
+    
+}
+
+
+
+.banner {
+    height:0px;
+    width:100%;
+    background-image: url('./Imagens/banner_arvores_2.png');
+    
+}
+
+
+.menu {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+
+}
+
+.menu ul {
+    margin:0px;
+}
+
+.menu li {
+    
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width:250px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: beige;
+    color:cadetblue;
+    line-height: normal;
+    
+}
+.pontos_colunas {
+    margin-bottom:500px;
+    
+}
+
+.pontos_colunas div {
+    float:left;
+    width:18%;
+    margin-right: 2%;
+}
+
+.pontos_colunas figure {
+    background-color: blue;
+    height: 100px;
+    width:100%;
+    margin:0px;
+    
+  }
+
+.pontos_colunas img {
+    width: 100%;
+}
+
+
+.pontos_colunas #col2 {   
+    position:relative;
+    top:50px;
+}
+
+.pontos_colunas #col3 {   
+    position:relative;
+    top:100px;
+}
+
+.pontos_colunas #col4 {   
+    position:relative;
+    top:150px;
+}
+
+.pontos_colunas #col5 {   
+    position:relative;
+    top:200px;
+    margin-right:0%;
+    
+}
+.pontos_colunas #clear {   
+    clear:both;
+}
+.pontos_colunas p {
+  
+  display: block;
+  width: 100%;
+  
+}
+
+.pontos div {
+    
+}
+.pontos {
+    
+}
+#pontos1 {
+    float:left;
+    width:50%;
+    
+}
+
+#pontos2 {
+    width:40%;
+    float:left;
+    
+    
+}
+#pontos3 {
+    clear:both;
+}
+#pontos_colunas_header {
+    width:100%;
+    
+}
+.pontos_colunas  p {
+    padding-top:25px;
+}
+
+.pontos ul ul li {
+    margin-top:10px;
+    font-size: 24px;
+    list-style: none;
+    padding-top:0px;
+    line-height: 1.5;
+}
+
+.menu li:hover{
+    background-color: gainsboro;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    
+    display: block;
+    height: 100%;
+    margin: -10px;
+    padding: 10px;
+}
+
+.menu li a {
+    display:block;
+}
+.menu a:hover {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #5f5549;
+    color:white;
+    font-size: 14px;
+    transform: scale(1,1.5);
+    line-height: normal;
+    text-align: right;    
+    padding-right:20px;
+    
+}
+
+#formulario {    
+    border-spacing: 20px;
+    margin: 0 auto ;
+    border:1px solid gray;
+}
+
+td {
+    width:auto;
+}
+
+#formulario td:first-child {
+    width:300px;
+    vertical-align: text-top;
+    
+}
+
+
+input,select,textarea {
+    font-size:24px;
+    border-radius: 10px;
+}
+
+tfoot input:hover {
+    cursor:pointer;
+    box-shadow: 0 0 2px rgb(195, 195, 195);
+    border: 1px solid rgb(195, 195, 195);
+
+
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    border:none;
+    display:block-inline;
+    padding: 10px 15px;
+    
+}
+
+tfoot td {
+    text-align: center;
+}
+
+fieldset {
+    border: white
+}
+
+legend {
+    border: 1px solid white;
+    text-align: center;
+}
+
+
+#automacao_figura > p {
+
+    width:50%;
+    display:inline-block;
+    
+    vertical-align: top;
+    text-align: left;
+}
+#automacao_figura {
+    
+}
+#automacao_figura div {
+    width:60%;
+    float:left;
+}
+#automacao_figura > #figura {
+    width:40%;
+}
+
+#machine_learning {
+    clear:both;
+    
+}
+
+figcaption {
+    font-size: 14px;
+}
+
+#figura img {
+    width: 100%;
+}
+
+#machine_learning a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+#automacao_video {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#img_resumo {
+    margin-top: 70px;
+}
+
+#img_resumo img {
+    width: 100%;
+}
+
+#img_resumo a {
+    text-decoration: none;
+    color:gray;
+}
+
+#img_resumo a:checked {
+    text-decoration: none;
+}
+
+#resumo {
+    border: 1px solid white;
+}
+
+#robotica img {
+    width: 100%;
+}
+
+#watson {
+    background-image: url("./Imagens/watson/watson_circ.JPG");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    
+}
+
+#tab_circular {
+    position:relative;
+    margin-right: -50px;
+}
+
+#tab_circular td{
+    width: 10%;
+    vertical-align: top;
+    margin-top:0px;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+#tab_circular td > img{
+    width:100%;
+}
+
+#tab_circular td > #wat2{
+    width:100%;
+    margin-left: 50px;
+}
+
+#tab_circular td > #wat3{
+    width:100%;
+}
+
+#tab_circular td > #wat1{
+    width:100%;
+}
+
+#tab_circular td > #wat6{
+    width:100%;
+}
+
+#tab_circular tr {
+    height:50px;
+}
+
+#wat4 {
+    
+    height:100px;
+    width:100%;
+}
+
+#wat5 {
+    width:100%;
+}
+
+#wat4 > figure > img {
+    width:23%;
+    
+}
+
