@@ -321,7 +321,15 @@
 #watson_grid_px {
     display:none;
 }
+
+iframe {
+    width:560px;
+    height:315px
 }
+
+
+}
+
 
 @media screen and (max-width:800px) {
     body {
@@ -553,6 +561,7 @@
         
     .g_wat4 img{
         width:23%;
+        
     }
     
     .g_wat5 {
@@ -567,6 +576,10 @@
     
     #watson_grid {
         display:none;
+    }
+
+    iframe {
+        width:70%;
     }
 }
 
@@ -794,6 +807,7 @@ figcaption {
 #automacao_video {
     margin-top: 30px;
     text-align: center;
+    
 }
 
 
@@ -807,6 +821,7 @@ figcaption {
 #robotica img {
     width: 100%;
 }
+
 
 
 
