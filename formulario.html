@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    
+</head>
+<body>
+    <header id="banner_menu">
+        <div class="banner"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html"><b>INÍCIO</b></a></li>
+                <li><a href="automacao.html"><b>AUTOMAÇÃO</b></a></li>
+                <!--
+                    <li><b>PREVISÃO DE DEMANDA</b></li>
+                    <li><b>OTIMIZAÇÃO DE ROTAS</b></li>
+                    <li><b>SELEÇÃO DE FORNECEDORES</b></li>
+                -->
+                <li><a href="formulario.html"><b>CONTATO</b></a></li>
+            </ul>    
+        </div>
+    </header>
+        <div class="wrapper">
+            <fieldset>
+                <legend class="titulo"><h1>FORMULÁRIO</h1></legend>
+            
+                <form action="" method="">
+                    <table id="formulario">
+                        <tr>
+                            <td><label for="nome" value="nome">Nome</label></td>
+                            <td><input type="text" id="nome" required=""></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input_email">E-mail</label></td>
+                            <td><input type="email" id="input_email" required=""></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input_tel">Telefone</label></td>
+                            <td><input type="tel" id="input_tel" placeholder="(xx) xxxx-xxxx"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ramo">Ramo da empresa</label></td>
+                            <td>
+                                <select name="ramo" id="ramo">
+                                    <option value="vazio"></option>
+                                    <option value="tecnologia">Tecnologia</option>
+                                    <option value="telecomunicao">Telecomunicação</option>
+                                    <option value="automotiva">Automotiva</option>
+                                    <option value="financeira">Financeira</option>
+                                    <option value="varejo">Varejo</option>
+                                    <option value="midia">Mídia</option>
+                                    <option value="bens_consumo">Bens de Consumo</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Você ou sua empresa utiliza IA no seu trabalho?</td>
+                            <td>
+                                <input type="radio" id="ia_sim" name="usa_ia">
+                                <label  for="ia_sim">Sim</label>
+
+                                <input type="radio" id="ia_nao" name="usa_ia">
+                                <label for="ia_nao">Não</label>
+                            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Se sim, onde é aplicado?</td>
+                            <td>
+                                <input type="checkbox" id="ia_log">                                
+                                <label for="ia_log">Logística</label>
+                                <br>
+                                <input type="checkbox" id="ia_fcst">
+                                <label for="ia_fcst">Previsão de Demanda</label>
+                                <br>
+                                <input type="checkbox" id="ia_rota">
+                                <label for="ia_rota">Otimização de Rota</label>
+                                <br>
+                                <input type="checkbox" id="ia_forn">
+                                <label for="ia_forn">Seleção de Fornecedores</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Caso tenha algum comentário, envie a sua mensagem.</td>
+                            <td><textarea rows="6" margin="0" placeholder="Digite a sua mensagem"></textarea></td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" value="Enviar">
+                                    <input type="reset" value="Reset">
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </fieldset>     
+        </div>
+        <footer>Site realizado para a atividade de Fundamentos da Web</footer>
+</body>
+
+</html>
