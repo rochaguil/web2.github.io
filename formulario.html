@@ -2,12 +2,16 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="stylesheet" href="./estilo.css" type="text/css">
+
     
+    
+
 </head>
 <body>
-    <header id="banner_menu">
+    <header id="banner_menu" >
         <div class="banner"></div>
         <div class="menu">
             <ul>
@@ -22,28 +26,109 @@
             </ul>    
         </div>
     </header>
-        <div class="wrapper">
+        <div class="wrapper" >
             <fieldset>
                 <legend class="titulo"><h1>FORMULÁRIO</h1></legend>
             
+                <form id="bs"">
+                    <div class="form-inline">
+                            <div class="col-xs-2">
+                                <label for="nome" value="nome">Nome</label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" id="nome" required="">    
+                            </div>
+                            <div class="col-xs-2">
+                                    <label for="input_email">E-mail</label>
+                            </div> 
+                            <div class="col-xs-4">
+                                    <input type="email" class="form-control" id="input_email" required="">
+                            </div>  
+                    </div>
+                    <div>&nbsp;</div>                    
+                    <div class="form-inline">
+                            <div class="col-xs-2">
+                                <label for="input_tel">Telefone</label>
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="tel" class="form-control"  placeholder="(xx) xxxx-xxxx">
+                            </div>
+                            <div class="col-xs-2">
+                                <label for="ramo">Ramo da empresa</label>
+                            </div>
+                            <div class="col-xs-4">
+                                <select name="ramo" class="form-control" id="ramo">
+                                    <option value="vazio"></option>
+                                    <option value="tecnologia">Tecnologia</option>
+                                    <option value="telecomunicao">Telecomunicação</option>
+                                    <option value="automotiva">Automotiva</option>
+                                    <option value="financeira">Financeira</option>
+                                    <option value="varejo">Varejo</option>
+                                    <option value="midia">Mídia</option>
+                                    <option value="bens_consumo">Bens de Consumo</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div>&nbsp;</div>                    
+                    <div class="form-inline">
+                        <div class="col-xs-2" >
+                            <label for="input_tel">Você ou sua empresa utiliza IA no seu trabalho?</label>
+                    </div>
+                    <div class="col-xs-4" >
+                        <input class="form-check-input" type="radio" name="usa_ia" id="ia_sim">
+                        <label class="form-check-label" for="ia_sim">Sim</label>
+                        <input class="form-check-input" type="radio" name="usa_ia" id="ia_nao">
+                        <label class="form-check-label" for="ia_nao">Não</label>
+                    </div>
+                    <div>&nbsp;</div>                    
+                    <div class="col-xs-2" >
+                        Se sim, onde é aplicado?
+                    </div>
+                    <div class="col-xs-4" >
+                        <div class="form-check" >
+                            <input class="form-check-input" type="checkbox" id="ia_log">                                
+                            <label class="form-check-label" for="ia_log">Logística</label>
+                            <br>
+                            <input class="form-check-input" type="checkbox" id="ia_fcst">
+                            <label class="form-check-label" for="ia_fcst">Previsão de Demanda</label>
+                            <br>
+                            <input class="form-check-input" type="checkbox" id="ia_rota">
+                            <label class="form-check-label" for="ia_rota">Otimização de Rota</label>
+                            <br>
+                            <input class="form-check-input" type="checkbox" id="ia_forn">
+                            <label class="form-check-label" for="ia_forn">Seleção de Fornecedores</label>
+                        </div>
+                    </div>
+                    <div>&nbsp;</div>                    
+                    <div class="form-group">
+                        <label class="" for="comentario">Caso tenha algum comentário, envie a sua mensagem.</label>
+                        <textarea id="comentario" class="form-control" rows="6" margin="0" placeholder="Digite a sua mensagem"></textarea>
+                    </div>
+                    <div>&nbsp;</div>                    
+                    <div>
+                        <input class="btn btn-primary" type="submit" value="Enviar">
+                        <input class="btn btn-primary" type="reset" value="Reset">
+                    </div>
+                </form>
+
                 <form action="" method="">
                     <table id="formulario">
                         <tr>
                             <td><label for="nome" value="nome">Nome</label></td>
-                            <td><input type="text" id="nome" required=""></td>
+                            <td><input type="text" class="form-control" id="nome" required=""></td>
                         </tr>
                         <tr>
                             <td><label for="input_email">E-mail</label></td>
-                            <td><input type="email" id="input_email" required=""></td>
+                            <td><input type="email" class="form-control" id="input_email" required=""></td>
                         </tr>
                         <tr>
                             <td><label for="input_tel">Telefone</label></td>
-                            <td><input type="tel" id="input_tel" placeholder="(xx) xxxx-xxxx"></td>
+                            <td><input type="tel" class="form-control" id="input_tel" placeholder="(xx) xxxx-xxxx"></td>
                         </tr>
                         <tr>
                             <td><label for="ramo">Ramo da empresa</label></td>
                             <td>
-                                <select name="ramo" id="ramo">
+                                <select name="ramo" id="ramo" class="form-control">
                                     <option value="vazio"></option>
                                     <option value="tecnologia">Tecnologia</option>
                                     <option value="telecomunicao">Telecomunicação</option>
@@ -69,7 +154,7 @@
                         <tr>
                             <td>Se sim, onde é aplicado?</td>
                             <td>
-                                <input type="checkbox" id="ia_log">                                
+                                <input type="checkbox" id="ia_log" class="form-check-input">                                
                                 <label for="ia_log">Logística</label>
                                 <br>
                                 <input type="checkbox" id="ia_fcst">
