@@ -329,6 +329,9 @@ iframe {
     height:315px
 }
 
+#img_resumo_mob{
+    display:none;
+}
 
 }
 
@@ -583,6 +586,27 @@ iframe {
     iframe {
         width:70%;
     }
+
+    #img_resumo{
+        display:none;
+    }
+
+    #img_resumo_mob figure img{
+        text-align: center;
+    }
+    
+    #img_resumo_mob figure img{
+        display:block;    
+        background-color: blue;
+            height:100%;
+            clear:both;
+            margin:0px auto;
+            
+    }
+    #bs {
+        margin:10px 0px;
+        padding: 0% 5%;
+    }
 }
 
 
@@ -822,7 +846,9 @@ figcaption {
 
 #bs {
     width:80%;
+
 }
+
 
 
 #formulario {
@@ -830,5 +856,211 @@ figcaption {
 }
 
 
+a{background-color:transparent}
+a:active,a:hover{outline:0}
+input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{
+    -webkit-appearance:button;cursor:pointer}
+button[disabled],
+html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type="checkbox"],input[type="radio"]{
+    -webkit-box-sizing:border-box;-moz-box-sizing:border-box;
+    box-sizing:border-box;padding:0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{
+    height:auto}
+input[type="search"]{
+    -webkit-appearance:textfield;-webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{
+    -webkit-appearance:none}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
+legend{border:0;padding:0}
+textarea{overflow:auto}
+optgroup{font-weight:bold}
+input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
+a{color:#337ab7;text-decoration:none}
+a:hover,a:focus{color:#23527c;text-decoration:underline}
+a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+.img-circle{border-radius:50%}
+fieldset{min-width:0;padding:0;margin:0;border:0}
+
+input[type="search"]{
+    -webkit-box-sizing:border-box;-moz-box-sizing:border-box; box-sizing:border-box;-webkit-appearance:none;appearance:none}
+input[type="radio"],input[type="checkbox"]{
+    margin:4px 0 0;margin-top:1px \9;line-height:normal}
+input[type="radio"][disabled],input[type="checkbox"][disabled],input[type="radio"].disabled,input[type="checkbox"].disabled,fieldset[disabled] input[type="radio"],fieldset[disabled] input[type="checkbox"]{
+    cursor:not-allowed}input[type="file"]{display:block}
+input[type="range"]{
+    display:block;width:100%}
+select[multiple],select[size]{
+    height:auto}
+input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus{
+    outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+output{
+    display:block;padding-top:7px;font-size:14px;line-height:1.42857143;color:#555}
+.form-control{
+    display:block;
+    width:50%;height:50px;padding:6px 12px;font-size:inherit;
+    line-height:1.42857143;color:inherit;background-color:#fff;background-image:none;
+    border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition:border-color ease-in-out .15s, 
+    -webkit-box-shadow ease-in-out .15s;
+    -o-transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s}
+.form-control:focus{border-color:#66afe9;outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6)}
+.form-control::-moz-placeholder{color:#999;opacity:1}
+.form-control:-ms-input-placeholder{color:#999}
+.form-control::-webkit-input-placeholder{color:#999}
+.form-control::-ms-expand{background-color:transparent;border:0}
+.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control{
+    background-color:#eee;opacity:1}
+.form-control[disabled],fieldset[disabled].form-control{cursor:not-allowed}
+textarea.form-control{height:auto}
 
 
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+
+  
+.form-check-input :checked ~ .checkmark:after {
+    background-color: #2196F3;
+  }
+
+
+
+.btn-primary{color:#fff;background-color:#0d6efd;border-color:#0d6efd; border-radius: 0;}
+.btn-primary:hover{color:#fff;background-color:#0b5ed7;border-color:#0a58ca}
+.btn-check:focus+.btn-primary,.btn-primary:focus{color:#fff;background-color:#0b5ed7;border-color:#0a58ca;box-shadow:0 0 0 .25rem rgba(49,132,253,.5)}.btn-check:active+.btn-primary,.btn-check:checked+.btn-primary,.btn-primary.active,.btn-primary:active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#0a58ca;border-color:#0a53be}.btn-check:active+.btn-primary:focus,.btn-check:checked+.btn-primary:focus,.btn-primary.active:focus,.btn-primary:active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .25rem rgba(49,132,253,.5)}.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#0d6efd;border-color:#0d6efd}.btn-secondary{color:#fff;background-color:#6c757d;border-color:#6c757d}.btn-secondary:hover{color:#fff;background-color:#5c636a;border-color:#565e64}.btn-check:focus+.btn-secondary,.btn-secondary:focus{color:#fff;background-color:#5c636a;border-color:#565e64;box-shadow:0 0 0 .25rem rgba(130,138,145,.5)}
+.btn {border-radius:.2rem;font-size: 0.8em;padding:0 0.5em;}
+
+/* The container */
+.container_box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container_box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+.checkmark_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container_box:hover input ~ .checkmark_box {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container_box input:checked ~ .checkmark_box {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark_box:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container_box input:checked ~ .checkmark_box:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container_box .checkmark_box:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  
